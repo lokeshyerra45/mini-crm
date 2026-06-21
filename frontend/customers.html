@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2 class="logo">Mini CRM</h2>
+
+        <ul class="menu">
+
+            <li><a href="dashboard.html">Dashboard</a></li>
+
+            <li><a href="leads.html">Leads</a></li>
+
+            <li><a href="customers.html">Customers</a></li>
+
+            <li><a href="followups.html">Follow Ups</a></li>
+
+            <li id="reportsMenu">
+                <a href="reports.html">Reports</a>
+            </li>
+
+            <li>
+                <a href="#" onclick="logout()">
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <h1>Customer Management</h1>
+
+        </header>
+
+        <!-- Add Customer Form -->
+
+        <div class="form-card">
+
+            <h2>Add Customer</h2>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Customer Name">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email">
+
+            <input
+                type="text"
+                id="phone"
+                placeholder="Phone Number">
+
+            <input
+                type="text"
+                id="address"
+                placeholder="Address">
+
+            <button onclick="addCustomer()">
+                Add Customer
+            </button>
+
+        </div>
+
+        <!-- Customer Table -->
+
+        <div class="table-section">
+
+            <h2>Customer List</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Name</th>
+
+                        <th>Email</th>
+
+                        <th>Phone</th>
+
+                        <th>Address</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="customerTableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/customers.js"></script>
+
+</body>
+
+</html>

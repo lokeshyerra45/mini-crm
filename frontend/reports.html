@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CRM Reports</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2 class="logo">
+            Mini CRM
+        </h2>
+
+        <ul class="menu">
+
+            <li>
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="leads.html">
+                    Leads
+                </a>
+            </li>
+
+            <li>
+                <a href="customers.html">
+                    Customers
+                </a>
+            </li>
+
+            <li>
+                <a href="followups.html">
+                    Follow Ups
+                </a>
+            </li>
+
+            <li>
+                <a href="reports.html">
+                    Reports
+                </a>
+            </li>
+
+            <li>
+                <a href="#"
+                   onclick="logout()">
+                   Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <h1>
+                CRM Reports
+            </h1>
+
+        </header>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>Total Leads</h3>
+                <p id="totalLeads">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Converted Leads</h3>
+                <p id="convertedLeads">0</p>
+            </div>
+
+            <div class="card">
+                <h3>New Leads</h3>
+                <p id="newLeads">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Contacted Leads</h3>
+                <p id="contactedLeads">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Followup Leads</h3>
+                <p id="followupLeads">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Rejected Leads</h3>
+                <p id="rejectedLeads">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Customers</h3>
+                <p id="totalCustomers">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Employees</h3>
+                <p id="totalEmployees">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Followups</h3>
+                <p id="totalFollowups">0</p>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/reports.js"></script>
+
+</body>
+
+</html>

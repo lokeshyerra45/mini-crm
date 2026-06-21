@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini CRM Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="login-container">
+
+        <div class="login-card">
+
+            <div class="logo-section">
+                <h1>Mini CRM</h1>
+                <p>Client Lead Management System</p>
+            </div>
+
+            <form id="loginForm">
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email"
+                           id="email"
+                           placeholder="Enter your email">
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password"
+                           id="password"
+                           placeholder="Enter your password">
+                </div>
+
+                <div class="show-password">
+                    <input type="checkbox" id="togglePassword">
+                    <label for="togglePassword">
+                        Show Password
+                    </label>
+                </div>
+
+                <button type="submit" class="login-btn">
+                    Login
+                </button>
+                <p style="margin-top:15px">
+
+                Don't have an account?
+
+                <a href="signup.html">
+                   Register
+                </a>
+
+                 </p>
+
+                <p id="errorMessage"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+
+</body>
+</html>

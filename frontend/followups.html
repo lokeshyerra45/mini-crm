@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow-Up Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2 class="logo">Mini CRM</h2>
+
+        <ul class="menu">
+
+            <li><a href="dashboard.html">Dashboard</a></li>
+
+            <li><a href="leads.html">Leads</a></li>
+
+            <li><a href="customers.html">Customers</a></li>
+
+            <li><a href="followups.html">Follow Ups</a></li>
+
+            <li id="reportsMenu">
+                <a href="reports.html">Reports</a>
+            </li>
+
+            <li>
+                <a href="#" onclick="logout()">
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <h1>Follow-Up Management</h1>
+
+        </header>
+
+        <!-- Add Follow-Up Form -->
+
+        <div class="form-card">
+
+            <h2>Schedule Follow-Up</h2>
+
+            <input
+                type="number"
+                id="leadId"
+                placeholder="Lead ID">
+
+            <input
+                type="date"
+                id="followupDate">
+
+            <textarea
+                id="notes"
+                rows="4"
+                placeholder="Enter Follow-Up Notes"></textarea>
+
+            <button onclick="addFollowup()">
+                Schedule Follow-Up
+            </button>
+
+        </div>
+
+        <!-- Follow-Up Table -->
+
+        <div class="table-section">
+
+            <h2>Follow-Up List</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Lead ID</th>
+
+                        <th>Follow-Up Date</th>
+
+                        <th>Notes</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="followupTableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/followups.js"></script>
+
+</body>
+
+</html>

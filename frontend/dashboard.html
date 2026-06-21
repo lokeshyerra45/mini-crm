@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <h2 class="logo">Mini CRM</h2>
+
+        <ul class="menu">
+
+            <li>
+                <a href="dashboard.html">Dashboard</a>
+            </li>
+
+            <li>
+                <a href="leads.html">Leads</a>
+            </li>
+
+            <li>
+                <a href="customers.html">Customers</a>
+            </li>
+
+            <li>
+                <a href="followups.html">Follow Ups</a>
+            </li>
+
+            <li id="reportsMenu">
+                <a href="reports.html">Reports</a>
+            </li>
+
+            <li>
+                <a href="#" onclick="logout()">
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Topbar -->
+        <header class="topbar">
+
+            <h1>Dashboard</h1>
+
+            <div class="profile" id="welcomeUser">
+                Welcome
+            </div>
+
+        </header>
+
+        <!-- Statistics Cards -->
+        <section class="cards">
+
+            <div class="card">
+                <h3>Total Leads</h3>
+                <p id="totalLeads">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Converted Leads</h3>
+                <p id="convertedLeads">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending Leads</h3>
+                <p id="pendingLeads">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Customers</h3>
+                <p id="totalCustomers">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Employees</h3>
+                <p id="totalUsers">0</p>
+            </div>
+
+        </section>
+
+        <!-- Recent Leads -->
+        <section class="table-section">
+
+            <h2>Recent Leads</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="leadTableBody">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
